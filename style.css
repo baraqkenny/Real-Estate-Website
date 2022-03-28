@@ -1,0 +1,897 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Playfair+Display:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(23, 0, 0, 0.4),rgba(0,0,0,0.4)), url(./high.jpeg) ;
+    background-repeat: no-repeat;
+
+}
+
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: sticky;
+}
+
+.house{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.house a{
+    color: rgb(250, 248, 248);
+    font-family: 'Hurricane', cursive;
+    text-decoration: none;
+}
+
+.header ul{
+    display: flex;
+    margin-right: 140px;
+    margin-top: 24px;
+    top: 0px;
+    flex-wrap: wrap;
+}
+
+.header ul li {
+    list-style: none;
+    margin-left: 90px;
+   
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 13px;
+}
+
+.header ul li a:hover{
+    color: deepskyblue;
+}
+
+
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    flex-wrap: wrap;
+}
+
+#search{
+    height: 30px;
+    width: 300px;
+    font-size: 14px;
+    padding: 0 0 0 7px;
+    text-transform: capitalize;
+}
+
+
+.bar{
+    margin: 0 0 0 10px;
+    padding: 7px 17px;
+    background-color: rgb(57, 161, 247);
+    border-radius: 7px;
+     color: #fff;
+     cursor: pointer;
+}
+
+
+.body{
+    text-align: center;
+    margin-top: 130px;
+    color: #fff;
+}
+
+.body p{
+    font-size: 20px; 
+    animation: moveinLeft 3s ease-in-out;
+  
+}
+
+.body h1{
+    text-transform: uppercase;
+    font-size: 44px;
+    margin-top: 30px;
+    font-weight: bold;
+    animation: moveinRight 3s ease-in-out;
+}
+
+@keyframes moveinLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+   80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveinRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+   80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.category{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 70px;
+   text-transform: capitalize;
+   font-weight: bold;
+   font-size: 19px;
+
+}
+
+.buy a{
+    margin-right: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.rent a{
+    margin-right: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sold a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagetwo{
+    margin-top: 170px;
+    text-align: center;
+
+}
+
+.pagetwo h1{
+    text-transform: capitalize;
+    color: rgb(7, 7, 70);
+}
+
+.pagetwo p{
+    margin-top: 13px;
+    color: grey;
+}
+
+.cardbox{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 320px;
+    height: 440px;
+    margin: 10px;
+    border: 1px solid grey;
+}
+
+.card-image{
+    background: aqua;
+    height: 170px;
+    margin-bottom: 19px;
+}
+
+.Card-1{
+  background: url(./sitting.jpeg);
+  background-position: center;
+
+}
+
+.Card-2{
+    background: url(./pexels-photo-534151.jpeg);
+    background-position: center;
+  }
+  
+
+  .Card-3{
+    background: url(./grass.jpeg);
+    background-position: center;
+    
+  }
+  
+.Card-4{
+    background: url(./bed.jpeg);
+    background-position: center;
+}
+  
+.card h3{
+    margin-left: 17px;
+    text-transform: capitalize;
+    color: rgb(7, 7, 70);
+}
+
+.card p{
+    margin-top: 10px;
+    margin-left: 17px;
+    color: grey;
+    font-size: 14px;
+}
+
+.Card-1:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./sitting.jpeg);
+    background-position: center;
+}
+
+.Card-2:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./pexels-photo-534151.jpeg);
+    background-position: center;
+}
+
+.Card-3:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./grass.jpeg);
+    background-position: center;
+}
+
+.Card-4:hover{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./bed.jpeg);
+    background-position: center;
+}
+
+.card-image span {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-image p{
+   color: #fff;
+   margin: 27px;
+   
+}
+
+.card-image .feat{
+  background: blue;
+  padding: 4px 8px;
+  text-transform: uppercase;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.card-image .sale{
+    background: rgb(2, 2, 37);
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+.card h5{
+    margin: 22px;
+    color: grey;
+}
+
+.card h6{
+    color: grey;
+    margin-left: 23px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.card h4{
+    margin: 27px;
+    color: rgb(7, 7, 70);
+}
+
+.pagethree{
+    margin-top: 100px;
+    background: #F8F7FF;
+    padding-bottom: 100px;
+   
+    
+}
+
+.pagethree h1{
+     text-align: center;
+     padding-top: 90px;
+     color: rgb(7, 7, 70);
+    word-spacing: 4px;
+    text-transform: capitalize;
+
+}
+
+.pagethree p{
+    text-align: center;
+    margin-top: 10px;
+    color: grey;
+    word-spacing: 4px;
+}
+
+
+.cardbox2{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.card2{
+    width: 320px;
+    height: 400px;
+    margin: 10px;
+    border: 1px solid gainsboro;
+    background: #fff;
+    transition: 0.5s;
+}
+
+
+
+.card2 h3{
+    color: rgb(7, 7, 70);
+    text-align: center;
+    margin-top: 170px;
+    text-transform: capitalize;
+
+}
+
+.card2 p{
+   font-size: 14px;
+   line-height: 24px;
+}
+
+.card2:hover{
+    box-shadow: 1px 1px 3px ;
+    transform: translateY(-7px);
+}
+
+.pagefour{
+    margin-top: 100px;
+
+}
+
+.pagefour h1{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(7, 7, 70);
+   word-spacing: 4px;
+   text-transform: capitalize;
+} 
+
+.pagefour p{
+    text-align: center;
+    margin-top: 10px;
+    color: grey;
+    word-spacing: 4px;
+}
+
+
+.cardbox3{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+
+.card3{
+    width: 320px;
+    height: 370px;
+    margin: 10px;
+   transition: 0.7s;
+}
+
+.cardbox3 .card-1{
+   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./light.jpeg);
+  border-radius: 4px;
+  background-position: center;
+}
+
+
+.cardbox3 .card-2{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./lap.webp);
+    background-position: center;
+      border-radius: 4px;
+    
+    }
+    
+
+    .cardbox3 .card-3{
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./sun.jpeg);
+        background-position: center;
+          border-radius: 4px;
+        }
+        
+.cardbox3 .card-4{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(./logo.jpg);
+      border-radius: 4px;
+      background-position: center;
+ }
+            
+ .cardbox3 .card-1:hover{
+    background: url(./light.jpeg);
+
+ }
+
+ .cardbox3 .card-2:hover{
+    background: url(./lap.webp);
+
+ }
+
+ .cardbox3 .card-3:hover{
+    background: url(./sun.jpeg);
+
+ }
+
+ .cardbox3 .card-4:hover{
+    background: url(./logo.jpg);
+
+ }
+
+  .pagefive{
+      width: 100vw;
+      height: 100vh;
+      margin-top: 100px;
+      background:linear-gradient(rgba(5, 29, 44, 0.4),rgba(5, 29, 44, 0.4)), url(./white.jpeg);
+      overflow: scroll;
+      background-position: left;
+      background-attachment: fixed;
+      text-align: center;
+      
+  }
+
+  .pagefive p{
+    margin-top: 170px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+.pagefive h1{
+    margin-top: 13px;
+    color: #fff;
+    text-transform: capitalize;
+
+} 
+
+.pagefive button {
+    margin-top: 70px;
+    
+}
+.pagefive button a{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+   padding: 20px 40px;
+   background-color: #2354f3;
+   border-radius: 4px;
+   font-weight: bold;
+   border: none;
+   transition: 0.4s;
+}
+.pagefive button a:hover{
+    background-color: #fff;
+    color: #2354f3;
+}
+
+.number{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.number p{
+    font-weight: bold;
+    font-size: 30px;
+    color: #2354f3;
+    letter-spacing: 2px;
+}
+
+.number2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+.number2 p{
+    text-transform: uppercase;
+    color: grey;
+    font-size: 14px;
+}
+
+.pagesix{
+    margin-top: 100px;
+    background: #F8F7FF;
+    padding-bottom: 90px;
+   
+}
+
+.pagesix h1{
+     text-align: center;
+     padding-top: 90px;
+     color: rgb(7, 7, 70);
+    word-spacing: 4px;
+    text-transform: capitalize;
+
+}
+
+.pagesix p{
+    text-align: center;
+    margin-top: 10px;
+    color: grey;
+    word-spacing: 4px;
+}
+
+
+.cardbox4{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.card4{
+    width: 370px;
+    height: 240px;
+    margin: 30px;
+    background: #fff;
+    box-shadow: 10px 0px gainsboro;
+
+}
+
+.card4 p{
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 40px;
+}
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+ img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    transform: translateY(-77px);
+}
+
+img .beard{
+    margin-left: 30px;
+}
+
+.pageseven{
+    margin-top: 100px;
+    padding-bottom: 90px;
+    
+}
+
+
+.pageseven h1{
+    text-align: center;
+    color: rgb(7, 7, 70);
+   word-spacing: 4px;
+   text-transform: capitalize;
+
+}
+
+
+.pageseven p{
+    text-align: center;
+    margin-top: 10px;
+    color: grey;
+    word-spacing: 4px;
+}
+
+.cardbox7{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.card7{
+    width: 320px;
+    height: 370px;
+    margin: 10px;
+}
+
+
+.cardbox7 .card-1{
+   border-radius: 4px;
+   background: url(./young.webp);
+   background-position: top;
+ }
+
+
+ .cardbox7 .card-2{
+    border-radius: 4px;
+    background: url(./suit.webp);
+    background-position: top;
+  }
+
+
+  .cardbox7 .card-3{
+    border-radius: 4px;
+    background: url(./hat.jpeg);
+    background-position: top;
+  }
+
+  .cardbox7 .card-4{
+    border-radius: 4px;
+    background: url(./ind.jpeg);
+    background-position: top;
+  }
+
+ .card7 h3{
+     text-align: center;
+     color: #fff;
+     padding-top: 340px;
+     text-transform: capitalize;
+ }
+
+.card7 p{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: grey;
+
+}
+
+.pageeight{
+    margin-top: 100px;
+    background-color: #2354f3;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.pageeight h1{
+    padding-top: 70px;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+
+.pageeight p{
+    margin-top: 17px;
+    color: #fff;
+}
+
+.pageeight h3{
+    margin-top: 40px; 
+    padding: 17px 40px;
+    
+} 
+
+.pageeight h3 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2354f3;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 17px 40px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.pageeight h3 a:hover{
+    background: blue;
+    border: 1px solid #fff;
+     color: #fff;
+
+}
+
+.pagenine{
+    background: rgb(30, 38, 46);
+    color: #fff;
+    display: flex;
+    padding-bottom: 120px;
+    flex-wrap: wrap;
+}
+
+.contact p{
+    color: #fff;
+    margin-left: 20px;
+    padding-top: 90px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.contact div{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: azure;
+    font-size: 14px;
+}
+
+.contact i{
+    color: #fff;
+    margin-right: 13px;
+    
+}
+
+.discover{
+    margin-left:170px;
+    padding-top: 90px;
+}
+.discover p{
+    font-size: 17px;
+    text-transform: capitalize;  
+}
+
+.discover div{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.discover div a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.discover div a:hover{
+    text-decoration: underline;
+}
+
+
+.list{
+    margin-left:140px;
+    padding-top: 90px;
+}
+.list p{
+    font-size: 17px;
+    text-transform: capitalize;  
+}
+
+.list div{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.list div a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.list div a:hover{
+    text-decoration: underline;
+}
+
+
+.link{
+    margin-left:120px;
+    padding-top: 90px;
+}
+.link p{
+    font-size: 17px;
+    text-transform: capitalize;  
+}
+
+.link div{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.link div a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.link div a:hover{
+    text-decoration: underline;
+}
+
+.subscribe{
+    margin-left:70px;
+    padding-top: 90px;
+}
+.subscribe p{
+    font-size: 17px;
+    text-transform: capitalize;  
+}
+
+.subscribe div{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.subscribe input{
+    margin-top: 30px;
+    padding: 17px 39px;
+    font-size: 17px;
+}
+
+.pageten{
+    background: rgb(30, 38, 46);
+    display: flex;
+    color: #fff;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.pageten p{
+    margin-left: 10px;
+}
+
+.pageten h1{
+   text-transform: capitalize;
+   margin-left: 270px;
+   transform: translateY(-13px);
+
+}
+
+.pageten a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 3px;
+    margin-left: 70px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1115px){
+    .image{
+        display: none;
+    }
+}
+@media (max-width: 724px){
+    .pageten  h1{
+     padding-top: 20px;
+     padding-bottom: 10px;
+     text-align: center;
+    }
+}
+
+@media (max-width: 393px){
+    .bar{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 410px){
+    .pageten h1{
+        margin-right: 100px;
+    }
+  
+}
+
+@media (max-width: 403px){
+    .pageten p{
+        margin-left: 30px;
+    }
+}
+
